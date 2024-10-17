@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_graphic_components_heroes",
+  "info": {
+    "displayName": "hero",
+    "icon": "landscape",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "overlayImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cssClasses": {
+      "type": "string"
+    },
+    "heroType": {
+      "type": "string"
+    },
+    "heroTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "text-components.title"
+    },
+    "heroButtons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "functional-component.button"
+    }
+  }
+}
