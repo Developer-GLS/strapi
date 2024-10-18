@@ -2,7 +2,8 @@
   "collectionName": "components_text_components_titles",
   "info": {
     "displayName": "title",
-    "icon": "file"
+    "icon": "file",
+    "description": ""
   },
   "options": {},
   "attributes": {

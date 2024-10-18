@@ -33,11 +33,29 @@ export interface GraphicComponentsHero extends Schema.Component {
   };
 }
 
+export interface TextComponentsSection extends Schema.Component {
+  collectionName: 'components_text_components_sections';
+  info: {
+    displayName: 'section';
+    icon: 'layer';
+    description: '';
+  };
+  attributes: {
+    sectionTitle: Attribute.Component<'text-components.title', true>;
+    paragraph: Attribute.Text;
+    sectionType: Attribute.String;
+    cssClasses: Attribute.String;
+    image: Attribute.Media;
+    bgImage: Attribute.Media;
+  };
+}
+
 export interface TextComponentsTitle extends Schema.Component {
   collectionName: 'components_text_components_titles';
   info: {
     displayName: 'title';
     icon: 'file';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
@@ -52,6 +70,7 @@ declare module '@strapi/types' {
     export interface Components {
       'functional-component.button': FunctionalComponentButton;
       'graphic-components.hero': GraphicComponentsHero;
+      'text-components.section': TextComponentsSection;
       'text-components.title': TextComponentsTitle;
     }
   }

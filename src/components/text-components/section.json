@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_text_components_sections",
+  "info": {
+    "displayName": "section",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-components.title"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "sectionType": {
+      "type": "string"
+    },
+    "cssClasses": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bgImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
